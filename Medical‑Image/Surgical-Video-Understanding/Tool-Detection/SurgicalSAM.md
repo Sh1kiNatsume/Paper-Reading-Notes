@@ -165,9 +165,7 @@ $$
 目标类别的类别激活特征用于生成稠密提示：
 
 $$
-T_D^{(c)}
-=
-g_D\left(\mathrm{ReLU}(f_D(F_I^{(c)}))\right)
+T_D^{(c)}=g_D\left(\mathrm{ReLU}(f_D(F_I^{(c)}))\right)
 $$
 
 稠密提示与图像空间中的多个位置相对应，因此包含较丰富的空间信息。
@@ -227,13 +225,7 @@ $$
 训练图像经过图像编码器后得到特征图 $F_I$。利用类别 $c$ 的真实掩码 $G^{(c)}$，模型只提取属于该类别器械区域的图像特征：
 
 $$
-v^{(c)}
-=
-\frac{
-\sum_i(F_I\circ G^{(c)})_i
-}{
-\sum_iG_i^{(c)}
-}
+v^{(c)}=\frac{\sum_i(F_I\circ G^{(c)})_i}{\sum_iG_i^{(c)}}
 $$
 
 其中：
@@ -248,16 +240,7 @@ $$
 论文使用类似 InfoNCE 的对比损失：
 
 $$
-\mathcal{L}_{PCL}
-=
--\frac{1}{C}
-\sum_{k=1}^{C}
-\log
-\frac{
-\exp(B^{(k)}\cdot v^{(k)}/\tau)
-}{
-\sum_{q=1}^{C}
-\exp(B^{(k)}\cdot v^{(q)}/\tau)
+\mathcal{L}_{PCL}=-\frac{1}{C}\sum_{k=1}^{C}\log\frac{\exp(B^{(k)}\cdot v^{(k)}/\tau)}{\sum_{q=1}^{C}\exp(B^{(k)}\cdot v^{(q)}/\tau)
 }
 $$
 
