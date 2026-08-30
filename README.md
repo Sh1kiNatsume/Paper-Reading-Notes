@@ -130,20 +130,31 @@
 
 ## 推荐阅读顺序
 
-主要背景阅读论文记录：
+主要论文阅读记录：
 
 1. [EndoNet](https://arxiv.org/abs/1602.03012)：了解手术阶段识别的基本问题；
 2. [SV-RCNet](https://ieeexplore.ieee.org/abstract/document/8240734)：了解 CNN 和 RNN 如何结合；
-3. [TeCNO](https://arxiv.org/abs/2003.10751)：了解时序卷积网络；
-4. [TMRNet](https://arxiv.org/abs/2103.16327)：了解长时间依赖建模；
-5. [Trans-SVNet](https://arxiv.org/abs/2103.09712)：了解 Transformer 在手术视频中的应用；
-6. [CholecT50](https://arxiv.org/abs/2109.03223)：了解手术动作三元组；
-7. [Endoscapes](https://arxiv.org/abs/2312.12429)：了解手术场景理解和安全视野评估；
-8. [SKiT](https://openaccess.thecvf.com/content/ICCV2023/html/Liu_SKiT_a_Fast_Key_Information_Video_Transformer_for_Online_Surgical_ICCV_2023_paper.html)：了解在线阶段识别；
-9. [Surgformer](https://arxiv.org/abs/2408.03867)：了解层级时间注意力；
-10. [SurgBench](https://arxiv.org/abs/2506.07603)：了解大规模手术视频基准；
-11. [SurgVLM](https://arxiv.org/abs/2506.02555)：了解视觉语言模型在手术视频中的应用；
-12. [SurgMotion](https://arxiv.org/abs/2602.05638)：了解最新的手术视频基础模型方向。
+3. [Weakly Supervised ConvLSTM Approach for Tool Tracking in Laparoscopic Videos](https://arxiv.org/abs/1812.01366)：了解弱监督 ConvLSTM 在腹腔镜器械跟踪中的应用；
+4. [Multi-task Recurrent Convolutional Network with Correlation Loss for Surgical Video Analysis](https://arxiv.org/abs/1907.06099)：了解多任务循环卷积网络和相关性损失；
+5. [TeCNO](https://arxiv.org/abs/2003.10751)：了解多阶段时序卷积网络；
+6. [Surgical Data Science: From Concepts toward Clinical Translation](https://arxiv.org/abs/2011.02284)：了解手术数据科学从数据采集、分析到临床转化的整体框架；
+7. [TMRNet](https://arxiv.org/abs/2103.16327)：了解长时间依赖建模；
+8. [Trans-SVNet](https://arxiv.org/abs/2103.09712)：了解 Transformer 在手术视频中的应用；
+9. [Rendezvous / CholecT50](https://arxiv.org/abs/2109.03223)：了解手术动作三元组，即器械、动作和目标的联合识别；
+10. [Surgical Workflow Analysis: A Review of the State of the Art](https://doi.org/10.1016/j.media.2021.102245)：系统了解手术工作流分析、阶段识别、动作识别和技能评估；
+11. [Endoscapes](https://arxiv.org/abs/2312.12429)：了解手术场景理解和 Critical View of Safety 安全视野评估；
+12. [SurgicalSAM](https://arxiv.org/abs/2308.08746)：了解 Segment Anything 类模型在手术器械分割中的应用；
+13. [SKiT](https://openaccess.thecvf.com/content/ICCV2023/html/Liu_SKiT_a_Fast_Key_Information_Video_Transformer_for_Online_Surgical_ICCV_2023_paper.html)：了解在线阶段识别；
+14. [An Image Is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)：了解 ViT 和 Transformer 在图像识别中的基础方法；
+15. [Attention Is All You Need](https://arxiv.org/abs/1706.03762)：了解 Transformer 和自注意力机制的基础；
+16. [Surgformer](https://arxiv.org/abs/2408.03867)：了解层级时间注意力；
+17. [SAM 2: Segment Anything in Images and Videos](https://arxiv.org/abs/2408.00714)：了解图像和视频中的通用目标分割；
+18. [Revisiting Feature Prediction for Learning Visual Representations from Video](https://arxiv.org/abs/2404.08471)：了解基于特征预测的视频视觉表征学习；
+19. [Systematic Evaluation and Guidelines for Segment Anything Model in Surgical Video Analysis](https://arxiv.org/abs/2501.00525)：了解 SAM 在手术视频分析中的系统性评估；
+20. [SurgVLM](https://arxiv.org/abs/2506.02555)：了解视觉语言模型在手术视频中的应用；
+21. [SurgBench](https://arxiv.org/abs/2506.07603)：了解大规模手术视频基准；
+22. [SurgMotion](https://arxiv.org/abs/2602.05638)：了解最新的手术视频基础模型方向。
+
 
 ## 方向之间的关系
 
