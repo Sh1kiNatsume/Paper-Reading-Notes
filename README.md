@@ -130,7 +130,7 @@
 
 ## 推荐阅读顺序
 
-主要阅读论文记录：
+主要背景阅读论文记录：
 
 1. [EndoNet](https://arxiv.org/abs/1602.03012)：了解手术阶段识别的基本问题；
 2. [SV-RCNet](https://ieeexplore.ieee.org/abstract/document/8240734)：了解 CNN 和 RNN 如何结合；
