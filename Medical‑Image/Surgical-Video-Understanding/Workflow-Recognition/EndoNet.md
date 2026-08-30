@@ -82,7 +82,7 @@ EndoNet 的处理流程可以概括为：
 
 论文原文的整体流程图如下：
 
-![EndoNet整体处理流程](../../Assets/EndoNet/Fig1_pipeline.png)
+![EndoNet整体处理流程](../../../Assets/EndoNet/Fig1_pipeline.png)
 
 > 图 1：EndoNet 的整体处理流程。EndoNet 用于特征提取和器械出现检测，SVM 输出阶段置信度，Hierarchical HMM 进一步利用手术流程的时间约束。  
 > 图片来源：原论文 Figure 1。
@@ -99,7 +99,7 @@ EndoNet 是 AlexNet 的扩展，主要包括：
 
 EndoNet 的网络结构如下：
 
-![EndoNet网络结构](../../Assets/EndoNet/Fig2_architecture.png)
+![EndoNet网络结构](../../../Assets/EndoNet/Fig2_architecture.png)
 
 > 图 2：EndoNet 网络结构。`fc_tool` 输出七类器械的出现置信度，并与 `fc7` 的视觉特征拼接后形成 `fc8`，用于阶段识别。  
 > 图片来源：原论文 Figure 2。
@@ -299,7 +299,7 @@ HHMM 包含两层：
 
 论文中 HHMM 的结构如下：
 
-![HHMM模型结构](../../Assets/EndoNet/Fig7_hhmm.png)
+![HHMM模型结构](../../../Assets/EndoNet/Fig7_hhmm.png)
 
 > 图 3：Cholec80 手术阶段的两层 HHMM 结构。顶层状态表示宏观手术阶段，底层状态表示阶段内部的变化。  
 > 图片来源：原论文 Figure 7。
@@ -453,7 +453,7 @@ HMM 可能推断出：
 
 Cholec80 数据的分布如下：
 
-![Cholec80数据分布](../../Assets/EndoNet/Fig4_cholec80_distribution.png)
+![Cholec80数据分布](../../../Assets/EndoNet/Fig4_cholec80_distribution.png)
 
 > 图 4：Cholec80 数据集中器械出现标注和手术阶段标注的分布。不同器械和不同阶段的样本数量存在差异。  
 > 图片来源：原论文 Figure 4。
@@ -562,7 +562,7 @@ EndoNet 的平均 AP 达到 81.0%，明显优于传统 DPM，也略优于只进�
 
 原论文结果表如下：
 
-![HHMM处理后的阶段识别结果](../../Assets/EndoNet/Table_IV_results.png)
+![HHMM处理后的阶段识别结果](../../../Assets/EndoNet/Table_IV_results.png)
 
 > 表 1：加入 HHMM 后的阶段识别结果。EndoNet 在 Cholec80 上取得 92.0% 的离线准确率和 81.7% 的在线准确率。  
 > 图片来源：原论文 Table IV。
