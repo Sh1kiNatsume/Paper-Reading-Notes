@@ -1492,7 +1492,10 @@ $$
 因此，归一化后的教师矩阵为：
 
 $$
-U^E\approx\begin{bmatrix}0.9138 & 0.4061 & 0 & 0\\0.8804 & 0.4202 & 0.2201 & 0\\0 & 0 & 0 & 1\end{bmatrix}.
+U^E\approx\begin{bmatrix}
+0.9138 & 0.4061 & 0 & 0\\
+0.8804 & 0.4202 & 0.2201 & 0\\
+0 & 0 & 0 & 1\end{bmatrix}.
 $$
 
 ### 3. 教师两两 token 相似度矩阵
@@ -1520,9 +1523,10 @@ $$
 因此：
 
 $$
-S^E\approx\begin{bmatrix}1 & 0.9751 & 0\
-\0.9751 & 1 & 0\
-\0 & 0 & 1\end{bmatrix}.
+S^E\approx\begin{bmatrix}
+1 & 0.9751 & 0\\
+0.9751 & 1 & 0\\
+0 & 0 & 1\end{bmatrix}.
 $$
 
 这表示：
@@ -1556,9 +1560,10 @@ $$
 逐行 softmax 后：
 
 $$
-A^E\approx\begin{bmatrix}0.5601 & 0.4399 & 0.000025\
-\0.4399 & 0.5601 & 0.000025\
-\0.000045 & 0.000045 & 0.999909\end{bmatrix}.
+A^E\approx\begin{bmatrix}
+0.5601 & 0.4399 & 0.000025\\
+0.4399 & 0.5601 & 0.000025\\
+0.000045 & 0.000045 & 0.999909\end{bmatrix}.
 $$
 
 第一行表示教师认为 Token 1：
@@ -1608,7 +1613,10 @@ $$
 归一化后的学生矩阵为：
 
 $$
-\hat U\approx\begin{bmatrix}0.9138 & 0.4061 & 0 & 0\\0.7841 & 0.4825 & 0.2211 & 0.3217\\0 & 0 & 0 & 1\end{bmatrix}.
+\hat U\approx\begin{bmatrix}
+0.9138 & 0.4061 & 0 & 0\\
+0.7841 & 0.4825 & 0.2211 & 0.3217\\
+0 & 0 & 0 & 1\end{bmatrix}.
 $$
 
 ### 7. 学生两两 token 相似度矩阵
@@ -1634,17 +1642,24 @@ $$
 因此：
 
 $$
-\hat S\approx\begin{bmatrix}1 & 0.9125 & 0\\0.9125 & 1 & 0.3217\\0 & 0.3217 & 1\end{bmatrix}.
+\hat S\approx\begin{bmatrix}
+1 & 0.9125 & 0\\
+0.9125 & 1 & 0.3217\\
+0 & 0.3217 & 1\end{bmatrix}.
 $$
 
 与教师矩阵相比：
 
 $$
-S^E\approx\begin{bmatrix}1 & 0.9751 & 0\\0.9751 & 1 & 0\\0 & 0 & 1\end{bmatrix},
+S^E\approx\begin{bmatrix}1 & 0.9751 & 0\\
+0.9751 & 1 & 0\\
+0 & 0 & 1\end{bmatrix},
 $$
 
 $$
-\hat S\approx\begin{bmatrix}1 & 0.9125 & 0\\0.9125 & 1 & 0.3217\\0 & 0.3217 & 1\end{bmatrix}.
+\hat S\approx\begin{bmatrix}1 & 0.9125 & 0\\
+0.9125 & 1 & 0.3217\\
+0 & 0.3217 & 1\end{bmatrix}.
 $$
 
 关键变化为：
@@ -1657,13 +1672,17 @@ $$
 学生相似度除以温度后为：
 
 $$
-\frac{\hat S}{\tau}\approx\begin{bmatrix}10 & 9.125 & 0\\9.125 & 10 & 3.217\\0 & 3.217 & 10\end{bmatrix}.
+\frac{\hat S}{\tau}\approx\begin{bmatrix}10 & 9.125 & 0\\
+9.125 & 10 & 3.217\\
+0 & 3.217 & 10\end{bmatrix}.
 $$
 
 逐行 softmax 后：
 
 $$
-\hat A\approx\begin{bmatrix}0.7058 & 0.2942 & 0.000032\\0.2940 & 0.7052 & 0.0008\\0.000045 & 0.0011 & 0.9988\end{bmatrix}.
+\hat A\approx\begin{bmatrix}0.7058 & 0.2942 & 0.000032\\
+0.2940 & 0.7052 & 0.0008\\
+0.000045 & 0.0011 & 0.9988\end{bmatrix}.
 $$
 
 学生第二行相较教师第二行：
@@ -1744,7 +1763,10 @@ $$
 假设一个 batch 中有 4 个 masked tokens，每个 token 有 3 个特征维度：
 
 $$
-Z=\begin{bmatrix}0.2 & 0.8 & 1.1\\0.2 & 0.7 & 0.3\\0.2 & 0.8 & -0.4\\0.2 & 0.7 & 0.9\end{bmatrix}.
+Z=\begin{bmatrix}0.2 & 0.8 & 1.1\\
+0.2 & 0.7 & 0.3\\
+0.2 & 0.8 & -0.4\\
+0.2 & 0.7 & 0.9\end{bmatrix}.
 $$
 
 - 每一行表示一个 token；
