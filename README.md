@@ -41,7 +41,7 @@
 
 ## 手术视频理解 - 数据集与基准
 
-已录制 | 年份 | 名字 | 简介 | 原文链接
+年份 | 名字 | 简介 | 原文链接
 ---:|---|---|---
  | 2016 | [Cholec80 / EndoNet Dataset](https://arxiv.org/abs/1602.03012) | 80 个胆囊切除手术视频，包含阶段和器械标注 | [Paper](https://arxiv.org/abs/1602.03012)
  | 2016 | [M2CAI16 Workflow Challenge](https://arxiv.org/abs/1610.09278) | 腹腔镜胆囊切除手术流程识别挑战数据集 | [Paper](https://arxiv.org/abs/1610.09278)
