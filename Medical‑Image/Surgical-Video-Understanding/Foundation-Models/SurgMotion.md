@@ -1552,9 +1552,9 @@ $$
 教师相似度除以温度后为：
 
 $$
-\frac{S^E}{\tau}\approx\begin{bmatrix}10 & 9.751 & 0\
-\9.751 & 10 & 0\
-\0 & 0 & 10\end{bmatrix}.
+\frac{S^E}{\tau}\approx\begin{bmatrix}10 & 9.751 & 0\\
+9.751 & 10 & 0\\
+0 & 0 & 10\end{bmatrix}.
 $$
 
 逐行 softmax 后：
@@ -1579,9 +1579,9 @@ $$
 假设学生输出为：
 
 $$
-\hat Z=\begin{bmatrix}0.90 & 0.40 & 0 & 0\
-\0.78 & 0.48 & 0.22 & 0.32\
-\0 & 0 & 0 & 1\end{bmatrix}.
+\hat Z=\begin{bmatrix}0.90 & 0.40 & 0 & 0\\
+0.78 & 0.48 & 0.22 & 0.32\\
+0 & 0 & 0 & 1\end{bmatrix}.
 $$
 
 学生 Token 2 在第 4 个特征维度上出现了 $0.32$。该维度主要对应背景 Token 3，因此学生可能错误地将背景信息混入了 Token 2。
