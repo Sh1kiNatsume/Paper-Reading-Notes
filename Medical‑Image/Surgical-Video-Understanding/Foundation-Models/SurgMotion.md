@@ -1472,29 +1472,17 @@ $$
 论文采用：
 
 $$
-u_i^E=
-\frac{z_i^E}
-{\max(\|z_i^E\|_2,\epsilon)}.
+u_i^E=\frac{z_i^E}{\max(\|z_i^E\|_2,\epsilon)}.
 $$
 
 各向量的范数为：
 
 $$
-\|z_1^E\|_2
-=
-\sqrt{0.90^2+0.40^2}
-=
-\sqrt{0.97}
-\approx 0.9849,
+\|z_1^E\|_2=\sqrt{0.90^2+0.40^2}=\sqrt{0.97}\approx 0.9849,
 $$
 
 $$
-\|z_2^E\|_2
-=
-\sqrt{0.88^2+0.42^2+0.22^2}
-=
-\sqrt{0.9992}
-\approx 0.9996,
+\|z_2^E\|_2=\sqrt{0.88^2+0.42^2+0.22^2}=\sqrt{0.9992}\approx 0.9996,
 $$
 
 $$
@@ -1504,12 +1492,7 @@ $$
 因此，归一化后的教师矩阵为：
 
 $$
-U^E\approx
-\begin{bmatrix}
-0.9138 & 0.4061 & 0 & 0\\
-0.8804 & 0.4202 & 0.2201 & 0\\
-0 & 0 & 0 & 1
-\end{bmatrix}.
+U^E\approx\begin{bmatrix}0.9138 & 0.4061 & 0 & 0\\0.8804 & 0.4202 & 0.2201 & 0\\0 & 0 & 0 & 1\end{bmatrix}.
 $$
 
 ### 3. 教师两两 token 相似度矩阵
@@ -1525,34 +1508,19 @@ $$
 例如：
 
 $$
-S^E_{1,2}
-=
-u_1^E\cdot u_2^E
-\approx
-0.9138\times0.8804
-+
-0.4061\times0.4202
-\approx 0.9751.
+S^E_{1,2}=u_1^E\cdot u_2^E\approx0.9138\times0.8804+0.4061\times0.4202\approx 0.9751.
 $$
 
 教师中 Token 2 与 Token 3 的相似度为：
 
 $$
-S^E_{2,3}
-=
-u_2^E\cdot u_3^E
-=0.
+S^E_{2,3}=u_2^E\cdot u_3^E=0.
 $$
 
 因此：
 
 $$
-S^E\approx
-\begin{bmatrix}
-1 & 0.9751 & 0\\
-0.9751 & 1 & 0\\
-0 & 0 & 1
-\end{bmatrix}.
+S^E\approx\begin{bmatrix}1 & 0.9751 & 0\\0.9751 & 1 & 0\\0 & 0 & 1\end{bmatrix}.
 $$
 
 这表示：
@@ -1572,36 +1540,19 @@ $$
 对相似度矩阵逐行执行带温度的 softmax：
 
 $$
-a^E_{i,j}
-=
-\frac{
-\exp(S^E_{i,j}/\tau)
-}{
-\sum_k\exp(S^E_{i,k}/\tau)
-}.
+a^E_{i,j}=\frac{\exp(S^E_{i,j}/\tau)}{\sum_k\exp(S^E_{i,k}/\tau)}.
 $$
 
 教师相似度除以温度后为：
 
 $$
-\frac{S^E}{\tau}
-\approx
-\begin{bmatrix}
-10 & 9.751 & 0\\
-9.751 & 10 & 0\\
-0 & 0 & 10
-\end{bmatrix}.
+\frac{S^E}{\tau}\approx\begin{bmatrix}10 & 9.751 & 0\\9.751 & 10 & 0\\0 & 0 & 10\end{bmatrix}.
 $$
 
 逐行 softmax 后：
 
 $$
-A^E\approx
-\begin{bmatrix}
-0.5601 & 0.4399 & 0.000025\\
-0.4399 & 0.5601 & 0.000025\\
-0.000045 & 0.000045 & 0.999909
-\end{bmatrix}.
+A^E\approx\begin{bmatrix}0.5601 & 0.4399 & 0.000025\\0.4399 & 0.5601 & 0.000025\\0.000045 & 0.000045 & 0.999909\end{bmatrix}.
 $$
 
 第一行表示教师认为 Token 1：
@@ -1617,12 +1568,7 @@ $$
 假设学生输出为：
 
 $$
-\hat Z=
-\begin{bmatrix}
-0.90 & 0.40 & 0 & 0\\
-0.78 & 0.48 & 0.22 & 0.32\\
-0 & 0 & 0 & 1
-\end{bmatrix}.
+\hat Z=\begin{bmatrix}0.90 & 0.40 & 0 & 0\\0.78 & 0.48 & 0.22 & 0.32\\0 & 0 & 0 & 1\end{bmatrix}.
 $$
 
 学生 Token 2 在第 4 个特征维度上出现了 $0.32$。该维度主要对应背景 Token 3，因此学生可能错误地将背景信息混入了 Token 2。
@@ -1642,31 +1588,19 @@ $$
 Token 2 的范数为：
 
 $$
-\|\hat z_2\|_2
-=
-\sqrt{0.78^2+0.48^2+0.22^2+0.32^2}
-=
-\sqrt{0.9896}
-\approx0.9948.
+\|\hat z_2\|_2=\sqrt{0.78^2+0.48^2+0.22^2+0.32^2}=\sqrt{0.9896}\approx0.9948.
 $$
 
 因此：
 
 $$
-\hat u_2
-\approx
-(0.7841,0.4825,0.2211,0.3217).
+\hat u_2\approx(0.7841,0.4825,0.2211,0.3217).
 $$
 
 归一化后的学生矩阵为：
 
 $$
-\hat U\approx
-\begin{bmatrix}
-0.9138 & 0.4061 & 0 & 0\\
-0.7841 & 0.4825 & 0.2211 & 0.3217\\
-0 & 0 & 0 & 1
-\end{bmatrix}.
+\hat U\approx\begin{bmatrix}0.9138 & 0.4061 & 0 & 0\\0.7841 & 0.4825 & 0.2211 & 0.3217\\0 & 0 & 0 & 1\end{bmatrix}.
 $$
 
 ### 7. 学生两两 token 相似度矩阵
@@ -1680,52 +1614,29 @@ $$
 Token 1 与 Token 2 的相似度为：
 
 $$
-\hat S_{1,2}
-=
-\hat u_1\cdot\hat u_2
-\approx
-0.9125.
+\hat S_{1,2}=\hat u_1\cdot\hat u_2\approx0.9125.
 $$
 
 Token 2 与 Token 3 的相似度为：
 
 $$
-\hat S_{2,3}
-=
-\hat u_2\cdot\hat u_3
-=
-0.3217.
+\hat S_{2,3}=\hat u_2\cdot\hat u_3=0.3217.
 $$
 
 因此：
 
 $$
-\hat S\approx
-\begin{bmatrix}
-1 & 0.9125 & 0\\
-0.9125 & 1 & 0.3217\\
-0 & 0.3217 & 1
-\end{bmatrix}.
+\hat S\approx\begin{bmatrix}1 & 0.9125 & 0\\0.9125 & 1 & 0.3217\\0 & 0.3217 & 1\end{bmatrix}.
 $$
 
 与教师矩阵相比：
 
 $$
-S^E\approx
-\begin{bmatrix}
-1 & 0.9751 & 0\\
-0.9751 & 1 & 0\\
-0 & 0 & 1
-\end{bmatrix},
+S^E\approx\begin{bmatrix}1 & 0.9751 & 0\\0.9751 & 1 & 0\\0 & 0 & 1\end{bmatrix},
 $$
 
 $$
-\hat S\approx
-\begin{bmatrix}
-1 & 0.9125 & 0\\
-0.9125 & 1 & 0.3217\\
-0 & 0.3217 & 1
-\end{bmatrix}.
+\hat S\approx\begin{bmatrix}1 & 0.9125 & 0\\0.9125 & 1 & 0.3217\\0 & 0.3217 & 1\end{bmatrix}.
 $$
 
 关键变化为：
@@ -1738,38 +1649,23 @@ $$
 学生相似度除以温度后为：
 
 $$
-\frac{\hat S}{\tau}
-\approx
-\begin{bmatrix}
-10 & 9.125 & 0\\
-9.125 & 10 & 3.217\\
-0 & 3.217 & 10
-\end{bmatrix}.
+\frac{\hat S}{\tau}\approx\begin{bmatrix}10 & 9.125 & 0\\9.125 & 10 & 3.217\\0 & 3.217 & 10\end{bmatrix}.
 $$
 
 逐行 softmax 后：
 
 $$
-\hat A\approx
-\begin{bmatrix}
-0.7058 & 0.2942 & 0.000032\\
-0.2940 & 0.7052 & 0.0008\\
-0.000045 & 0.0011 & 0.9988
-\end{bmatrix}.
+\hat A\approx\begin{bmatrix}0.7058 & 0.2942 & 0.000032\\0.2940 & 0.7052 & 0.0008\\0.000045 & 0.0011 & 0.9988\end{bmatrix}.
 $$
 
 学生第二行相较教师第二行：
 
 $$
-a_2^E
-\approx
-(0.4399,0.5601,0.000025),
+a_2^E\approx(0.4399,0.5601,0.000025),
 $$
 
 $$
-\hat a_2
-\approx
-(0.2940,0.7052,0.0008).
+\hat a_2\approx(0.2940,0.7052,0.0008).
 $$
 
 这说明学生：
@@ -1783,29 +1679,13 @@ $$
 论文使用：
 
 $$
-\mathcal{L}_{\mathrm{st}}
-=
-\frac{1}{|I^m|}
-\sum_{i\in I^m}
-\sum_{j\in I^m}
-a^E_{i,j}
-\log
-\frac{a^E_{i,j}}{\hat a_{i,j}}.
+\mathcal{L}_{\mathrm{st}}=\frac{1}{|I^m|}\sum_{i\in I^m}\sum_{j\in I^m}a^E_{i,j}\log\frac{a^E_{i,j}}{\hat a_{i,j}}.
 $$
 
 本例中共有 3 个 masked tokens，因此：
 
 $$
-\mathcal{L}_{\mathrm{st}}
-=
-\frac{1}{3}
-\left[
-D_{\mathrm{KL}}(a_1^E\|\hat a_1)
-+
-D_{\mathrm{KL}}(a_2^E\|\hat a_2)
-+
-D_{\mathrm{KL}}(a_3^E\|\hat a_3)
-\right].
+\mathcal{L}_{\mathrm{st}}=\frac{1}{3}\left[D_{\mathrm{KL}}(a_1^E\|\hat a_1)+D_{\mathrm{KL}}(a_2^E\|\hat a_2)+D_{\mathrm{KL}}(a_3^E\|\hat a_3)\right].
 $$
 
 各行 KL 散度约为：
@@ -1825,11 +1705,7 @@ $$
 因此：
 
 $$
-\mathcal{L}_{\mathrm{st}}
-\approx
-\frac{0.047+0.047+0.0009}{3}
-\approx
-\boxed{0.032}.
+\mathcal{L}_{\mathrm{st}}\approx\frac{0.047+0.047+0.0009}{3}\approx\boxed{0.032}.
 $$
 
 ### 10. Affinity loss 的含义
@@ -1843,9 +1719,7 @@ $$
 还要求：
 
 $$
-\text{学生 token 间的关系}
-\approx
-\text{教师 token 间的关系}.
+\text{学生 token 间的关系}\approx\text{教师 token 间的关系}.
 $$
 
 它可以同时惩罚：
@@ -1862,13 +1736,7 @@ $$
 假设一个 batch 中有 4 个 masked tokens，每个 token 有 3 个特征维度：
 
 $$
-Z=
-\begin{bmatrix}
-0.2 & 0.8 & 1.1\\
-0.2 & 0.7 & 0.3\\
-0.2 & 0.8 & -0.4\\
-0.2 & 0.7 & 0.9
-\end{bmatrix}.
+Z=\begin{bmatrix}0.2 & 0.8 & 1.1\\0.2 & 0.7 & 0.3\\0.2 & 0.8 & -0.4\\0.2 & 0.7 & 0.9\end{bmatrix}.
 $$
 
 - 每一行表示一个 token；
@@ -1880,11 +1748,7 @@ SFDR 在每个特征维度上统计所有 token 的标准差。
 论文中的方差损失为：
 
 $$
-\mathcal{L}_{\mathrm{var}}
-=
-\frac{1}{D}
-\sum_{d=1}^{D}
-\max(0,\sigma_0-\sigma_d).
+\mathcal{L}_{\mathrm{var}}=\frac{1}{D}\sum_{d=1}^{D}\max(0,\sigma_0-\sigma_d).
 $$
 
 其中：
@@ -1915,11 +1779,7 @@ $$
 总体方差为：
 
 $$
-\sigma_1^2
-=
-\frac{1}{4}
-\sum_{i=1}^{4}(z_{i,1}-\mu_1)^2
-=0.
+\sigma_1^2=\frac{1}{4}\sum_{i=1}^{4}(z_{i,1}-\mu_1)^2=0.
 $$
 
 因此：
@@ -1933,11 +1793,7 @@ $$
 对应的惩罚为：
 
 $$
-\ell_1
-=
-\max(0,0.5-0)
-=
-0.5.
+\ell_1=\max(0,0.5-0)=0.5.
 $$
 
 ### 3. 第二个特征维度
@@ -1951,32 +1807,19 @@ $$
 均值为：
 
 $$
-\mu_2
-=
-\frac{0.8+0.7+0.8+0.7}{4}
-=
-0.75.
+\mu_2=\frac{0.8+0.7+0.8+0.7}{4}=0.75.
 $$
 
 总体方差为：
 
 $$
-\sigma_2^2
-=
-\frac{
-(0.8-0.75)^2+
-(0.7-0.75)^2+
-(0.8-0.75)^2+
-(0.7-0.75)^2
-}{4}.
+\sigma_2^2=\frac{(0.8-0.75)^2+(0.7-0.75)^2+(0.8-0.75)^2+(0.7-0.75)^2}{4}.
 $$
 
 因此：
 
 $$
-\sigma_2^2=0.0025,
-\qquad
-\sigma_2=0.05.
+\sigma_2^2=0.0025,\qquad\sigma_2=0.05.
 $$
 
 该特征维度有一定变化，但变化幅度较小。
@@ -1984,11 +1827,7 @@ $$
 对应的惩罚为：
 
 $$
-\ell_2
-=
-\max(0,0.5-0.05)
-=
-0.45.
+\ell_2=\max(0,0.5-0.05)=0.45.
 $$
 
 ### 4. 第三个特征维度
@@ -2002,11 +1841,7 @@ $$
 均值为：
 
 $$
-\mu_3
-=
-\frac{1.1+0.3-0.4+0.9}{4}
-=
-0.475.
+\mu_3=\frac{1.1+0.3-0.4+0.9}{4}=0.475.
 $$
 
 各元素与均值的偏差为：
@@ -2018,22 +1853,13 @@ $$
 总体方差为：
 
 $$
-\sigma_3^2
-=
-\frac{
-0.625^2+(-0.175)^2+(-0.875)^2+0.425^2
-}{4}
-=
-0.341875.
+\sigma_3^2=\frac{0.625^2+(-0.175)^2+(-0.875)^2+0.425^2}{4}=0.341875.
 $$
 
 因此：
 
 $$
-\sigma_3
-=
-\sqrt{0.341875}
-\approx0.5847.
+\sigma_3=\sqrt{0.341875}\approx0.5847.
 $$
 
 由于：
@@ -2045,11 +1871,7 @@ $$
 所以第三个特征维度不受惩罚：
 
 $$
-\ell_3
-=
-\max(0,0.5-0.5847)
-=
-0.
+\ell_3=\max(0,0.5-0.5847)=0.
 $$
 
 ### 5. 汇总标准差
@@ -2057,35 +1879,25 @@ $$
 三个特征维度的标准差为：
 
 $$
-(\sigma_1,\sigma_2,\sigma_3)
-=
-(0,0.05,0.5847).
+(\sigma_1,\sigma_2,\sigma_3)=(0,0.05,0.5847).
 $$
 
 对应的惩罚为：
 
 $$
-(\ell_1,\ell_2,\ell_3)
-=
-(0.5,0.45,0).
+(\ell_1,\ell_2,\ell_3)=(0.5,0.45,0).
 $$
 
 ### 6. 计算 $\mathcal{L}_{\mathrm{var}}$
 
 $$
-\mathcal{L}_{\mathrm{var}}
-=
-\frac{1}{3}
-(0.5+0.45+0).
+\mathcal{L}_{\mathrm{var}}=\frac{1}{3}(0.5+0.45+0).
 $$
 
 因此：
 
 $$
-\boxed{
-\mathcal{L}_{\mathrm{var}}
-\approx0.3167
-}.
+\boxed{\mathcal{L}_{\mathrm{var}}\approx0.3167}.
 $$
 
 ### 7. 结果解释
