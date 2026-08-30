@@ -263,11 +263,7 @@ $$
 SurgicalSAM 的总损失由两部分组成：
 
 $$
-\mathcal{L}
-=
-\mathcal{L}_{DICE}
-+
-\mathcal{L}_{PCL}
+\mathcal{L}=\mathcal{L}_{DICE}+\mathcal{L}_{PCL}
 $$
 
 其中：
