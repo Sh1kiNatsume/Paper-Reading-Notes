@@ -3,7 +3,7 @@
 > Title: SurgMotion: A Video-Native Foundation Model for Universal Understanding of Surgical Videos  
 > 作者: Jinlin Wu, Felix Holm, Chuxi Chen, An Wang, Yaxin Hu, Xiaofan Ye, Zelin Zang, Miao Xu, Lihua Zhou, Huai Liao, Danny T. M. Chan, Ming Feng, Wai S. Poon, Hongliang Ren, Dong Yi, Nassir Navab, Gaofeng Meng, Jiebo Luo, Hongbin Liu, Zhen Lei  
 > 机构: 中国科学院香港人工智能与机器人研究中心；慕尼黑工业大学 Computer Aided Medical Procedures；香港中文大学电子工程系；香港大学深圳医院；中山大学附属第一医院；香港中文大学医学院；北京协和医院；中国科学院自动化研究所；中国科学院大学等  
-> 被引次数: 暂无可靠数据  
+> Google scholar被引次数: 3  
 > 发表: 2026 年 4 月 20 日  
 > Venue: arXiv preprint  
 > Conference: N/A  
