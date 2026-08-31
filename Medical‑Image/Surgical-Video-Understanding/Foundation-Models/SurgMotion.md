@@ -270,9 +270,7 @@ Target latent
 预测结果为：
 
 $$
-\hat{z}_y
-=
-P_{\phi}(E_{\theta}(x),\Delta_y),
+\hat{z}_y=P_{\phi}(E_{\theta}(x),\Delta_y),
 $$
 
 其中 $\Delta_y$ 表示 masked 区域的空间和时间位置。
