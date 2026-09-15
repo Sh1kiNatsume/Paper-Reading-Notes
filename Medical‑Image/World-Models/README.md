@@ -2,6 +2,19 @@
 
 记录世界模型相关论文与学习笔记，重点关注世界模型在手术视频理解、手术流程预测、手术规划和机器人学习中的应用。
 
+## 目录结构
+
+```text
+World-Models/
+├── Paper-Notes/       # 相关文章阅读记录
+│   ├── World-Model-Basics/
+│   ├── Video-Prediction-and-Generation/
+│   ├── Surgical-Video-Modeling/
+│   ├── Robot-Learning-and-Planning/
+│   └── Medical-Scene-Challenges/
+└── Presentations/     # 自己整理的讲解 PPT 和提纲
+```
+
 ## 世界模型基本概念
 
 年份 | 名字 | 简介 | 原文链接
