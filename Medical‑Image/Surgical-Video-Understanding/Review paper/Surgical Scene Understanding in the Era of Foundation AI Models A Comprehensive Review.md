@@ -205,6 +205,8 @@ Azad 等人的研究主要讨论 U-Net 及其变体在医学图像分割中的�
 
 论文按照以下结构组织全文。
 
+![Figure 2: Organization of This Paper](../../../Assets/Surgical%20Scene%20Understanding%20in%20the%20Era%20of%20Foundation%20AI%20Models%20A%20Comprehensive%20Review/Fig2.png)
+
 ### Section 2：Background and Challenges
 
 介绍：
