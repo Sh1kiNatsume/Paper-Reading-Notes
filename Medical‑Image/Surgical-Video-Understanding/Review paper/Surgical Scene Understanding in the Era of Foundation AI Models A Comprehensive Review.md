@@ -106,7 +106,7 @@
 
 这三个方向不是完全独立的。器械检测可以为手术阶段识别提供信息，而手术阶段信息也可以帮助模型理解器械和组织之间的交互。
 
-![Figure 1: Key components in surgical scene understanding](figures/figure-1-key-components.png)
+![Figure 1: Key components in surgical scene understanding](../../../Assets/Surgical%20Scene%20Understanding%20in%20the%20Era%20of%20Foundation%20AI%20Models%20A%20Comprehensive%20Review/Fig1.png)
 
 > 原文图：Figure 1，Key components in surgical scene understanding。
 
@@ -734,7 +734,7 @@ GPT 类模型可以用于：
 - 器官造成的部分遮挡；
 - 透明器械。
 
-![Figure 7: Key challenges in surgical video analysis](figures/figure-7-surgical-video-challenges.png)
+![Figure 7: Key challenges in surgical video analysis](../../../Assets/Surgical%20Scene%20Understanding%20in%20the%20Era%20of%20Foundation%20AI%20Models%20A%20Comprehensive%20Review/Fig7.png)
 
 > 原文图：Figure 7，Key challenges in surgical video analysis。
 
@@ -984,7 +984,7 @@ Kalman Filter 适合：
 - CycleSAM：使用参考图像或参考帧保持时间一致性；
 - Surgical SAM 2：通过帧剪枝提高视频分割效率。
 
-![Figure 8: Segmentation tasks addressed by SAM variants](figures/figure-8-sam-variants.png)
+![Figure 8: Segmentation tasks addressed by SAM variants](../../../Assets/Surgical%20Scene%20Understanding%20in%20the%20Era%20of%20Foundation%20AI%20Models%20A%20Comprehensive%20Review/Fig8.png)
 
 > 原文图：Figure 8，Segmentation tasks in surgical video analytics addressed by SAM variants。
 
