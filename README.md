@@ -1,10 +1,10 @@
 # Papers
 个人论文阅读仓库，包含论文、笔记、摘要与学习总结
-# 手术视频领域论文推荐
+# 手术视频领域论文
 
 > 推荐方向：手术视频理解、手术流程识别、手术阶段识别、器械检测、手术动作识别、视觉语言模型、手术场景重建和手术视频生成。
 
-## 手术视频理解 - 早期工作与流程识别
+## Workflow-Recognition - 早期工作与流程识别
 
 年份 | 名字 | 简介 | 原文链接
 ---:|---|---|---
@@ -17,7 +17,15 @@
  | 2019 | [Hard Frame Detection and Online Mapping for Surgical Phase Recognition](https://link.springer.com/chapter/10.1007/978-3-030-32254-0_50) | 关注在线阶段识别中的困难帧检测和时间映射 | [Paper](https://link.springer.com/chapter/10.1007/978-3-030-32254-0_50)
  | 2020 | [Multi-task Recurrent Convolutional Network with Correlation Loss for Surgical Video Analysis](https://arxiv.org/abs/1907.06099) | 通过多任务循环卷积网络和相关性损失进行手术视频分析 | [Paper](https://arxiv.org/abs/1907.06099)
 
-## 手术视频理解 - 阶段识别与时序建模
+## Foundations - 基础理论与手术数据科学
+
+年份 | 名字 | 简介 | 原文链接
+---:|---|---|---
+ | 2017 | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) | Transformer 和自注意力机制的基础论文 | [Paper](https://arxiv.org/abs/1706.03762)
+ | 2020 | [An Image Is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) | Vision Transformer 的代表性工作 | [Paper](https://arxiv.org/abs/2010.11929)
+ | 2020 | [Surgical Data Science: From Concepts toward Clinical Translation](https://arxiv.org/abs/2011.02284) | 介绍手术数据科学从数据采集、分析到临床转化的整体框架 | [Paper](https://arxiv.org/abs/2011.02284)
+
+## Phase-Recognition - 阶段识别与时序建模
 
 年份 | 名字 | 简介 | 原文链接
 ---:|---|---|---
@@ -39,7 +47,7 @@
  | 2025 | [LoViT: Long Video Transformer for Surgical Phase Recognition](https://www.sciencedirect.com/science/article/pii/S1361841524002913) | 针对长手术视频设计的 Transformer 阶段识别方法 | [Paper](https://www.sciencedirect.com/science/article/pii/S1361841524002913)
  | 2025 | [SWAG: Long-term Surgical Workflow Prediction with Generative-based Anticipation](https://arxiv.org/abs/2412.18849) | 使用生成式方法预测未来手术流程 | [Paper](https://arxiv.org/abs/2412.18849)
 
-## 手术视频理解 - 数据集与基准
+## Datasets - 数据集与基准
 
 年份 | 名字 | 简介 | 原文链接
 ---:|---|---|---
@@ -58,17 +66,18 @@
  | 2025 | [LEMON: A Large Endoscopic MONocular Dataset and Foundation Model for Perception in Surgical Settings](https://arxiv.org/abs/2503.19740) | 大规模单目内镜数据集和手术感知基础模型 | [Paper](https://arxiv.org/abs/2503.19740)
  | 2025 | [PhaKIR: Video Dataset for Surgical Phase, Keypoint, and Instrument Recognition](https://arxiv.org/abs/2511.06549) | 同时支持阶段、关键点和器械识别 | [Paper](https://arxiv.org/abs/2511.06549)
 
-## 手术视频理解 - 手术动作与 Triplet Recognition
+## Triplet-Recognition - 手术动作与 Triplet Recognition
 年份 | 名字 | 简介 | 原文链接
 ---:|---|---|---
  | 2019 | [Surgical Action Recognition with Deep Learning](https://arxiv.org/abs/1905.05172) | 使用深度学习识别手术中的细粒度动作 | [Paper](https://arxiv.org/abs/1905.05172)
  | 2021 | [CholecT50: A Multi-task Dataset for Surgical Action Triplet Recognition](https://arxiv.org/abs/2109.03223) | 将手术活动表示为器械、动作和目标三元组 | [Paper](https://arxiv.org/abs/2109.03223)
+ | 2021 | [Rendezvous: A Deep Learning Framework for Surgical Action Triplet Recognition](https://arxiv.org/abs/2109.03223) | 联合识别手术器械、动作和目标组织 | [Paper](https://arxiv.org/abs/2109.03223)
  | 2022 | [CholecTriplet2021: A Benchmark Challenge for Surgical Action Triplet Recognition](https://arxiv.org/abs/2204.04746) | 手术动作三元组识别基准和挑战赛 | [Paper](https://arxiv.org/abs/2204.04746)
  | 2024 | [Tail-Enhanced Representation Learning for Surgical Triplet Recognition](https://papers.miccai.org/miccai-2024/paper/0026_paper.pdf) | 针对长尾类别的手术三元组识别方法 | [Paper](https://papers.miccai.org/miccai-2024/paper/0026_paper.pdf)
  | 2025 | [fine-CLIP: Enhancing Zero-Shot Fine-Grained Surgical Action Recognition with Vision-Language Models](https://arxiv.org/abs/2503.19670) | 使用视觉语言模型进行零样本细粒度手术动作识别 | [Paper](https://arxiv.org/abs/2503.19670)
  | 2026 | [Generalized Recognition of Basic Surgical Actions Enables Skill Assessment and Vision-Language-Model-based Surgical Planning](https://arxiv.org/abs/2603.12787) | 基础手术动作识别、技能评估与手术规划 | [Paper](https://arxiv.org/abs/2603.12787)
 
-## 手术器械检测、跟踪与分割
+## Tool-Detection - 手术器械检测、跟踪与分割
 
 年份 | 名字 | 简介 | 原文链接
 ---:|---|---|---
@@ -77,13 +86,16 @@
  | 2017 | [Deep Learning for Surgical Tool Detection and Segmentation](https://arxiv.org/abs/1702.05780) | 使用深度学习进行手术工具检测和分割 | [Paper](https://arxiv.org/abs/1702.05780)
  | 2018 | [Surgical Tool Localization with Deep Learning](https://arxiv.org/abs/1802.04410) | 研究腹腔镜视频中的手术工具定位 | [Paper](https://arxiv.org/abs/1802.04410)
  | 2021 | [Image Compositing for Segmentation of Surgical Tools without Manual Annotations](https://arxiv.org/abs/2102.09528) | 通过图像合成减少手术器械分割的人工标注 | [Paper](https://arxiv.org/abs/2102.09528)
+ | 2018 | [Weakly Supervised ConvLSTM Approach for Tool Tracking in Laparoscopic Videos](https://arxiv.org/abs/1812.01366) | 使用弱监督 ConvLSTM 进行腹腔镜器械跟踪 | [Paper](https://arxiv.org/abs/1812.01366)
+ | 2023 | [SurgicalSAM: Surgical Instrument Segmentation with Segment Anything Model](https://arxiv.org/abs/2308.08746) | 将 Segment Anything Model 应用于手术器械分割 | [Paper](https://arxiv.org/abs/2308.08746)
+ | 2024 | [SAM 2: Segment Anything in Images and Videos](https://arxiv.org/abs/2408.00714) | 面向图像和视频的通用目标分割模型 | [Paper](https://arxiv.org/abs/2408.00714)
  | 2023 | [SurgToolLoc: Surgical Tool Localization Challenge](https://arxiv.org/abs/2305.07152) | 面向机器人手术器械定位的挑战赛 | [Paper](https://arxiv.org/abs/2305.07152)
  | 2023 | [SurgT: Surgical Tissue Tracking](https://arxiv.org/abs/2302.03022) | 面向手术组织跟踪的数据和任务 | [Paper](https://arxiv.org/abs/2302.03022)
  | 2024 | [EgoSurgery-Tool: A Dataset of Surgical Tool and Hand Detection from Egocentric Open Surgery Videos](https://arxiv.org/abs/2406.03095) | 第一视角开放手术中的器械和手部检测 | [Paper](https://arxiv.org/abs/2406.03095)
  | 2024 | [CholecTrack20: A Multi-Perspective Tracking Dataset for Surgical Tools](https://arxiv.org/abs/2312.07352) | 多视角手术器械跟踪数据集 | [Paper](https://arxiv.org/abs/2312.07352)
  | 2024 | [SURGIVID: Annotation-Efficient Surgical Video Object Discovery](https://arxiv.org/abs/2409.07801) | 研究标注高效的手术视频对象发现 | [Paper](https://arxiv.org/abs/2409.07801)
 
-## 手术场景理解、分割与安全评估
+## Scene-Understanding - 手术场景理解、分割与安全评估
 
 年份 | 名字 | 简介 | 原文链接
 ---:|---|---|---
@@ -94,7 +106,7 @@
  | 2025 | [Surgical Scene Understanding in the Era of Foundation AI Models](https://arxiv.org/abs/2502.14886) | 总结基础模型时代的手术场景理解方法 | [Paper](https://arxiv.org/abs/2502.14886)
  | 2025 | [Surgical Visual Understanding Dataset](https://arxiv.org/abs/2501.09209) | 面向手术视觉理解的多任务数据集 | [Paper](https://arxiv.org/abs/2501.09209)
 
-## 手术视觉问答与视觉语言模型
+## VQA-VLM - 手术视觉问答与视觉语言模型
 
 年份 | 名字 | 简介 | 原文链接
 ---:|---|---|---
@@ -105,8 +117,9 @@
  | 2025 | [SurgVLM: A Vision-Language Model for Surgical Video Understanding](https://arxiv.org/abs/2506.02555) | 面向多种手术任务的视觉语言模型和评测基准 | [Paper](https://arxiv.org/abs/2506.02555)
  | 2025 | [SurgPub-Video: A Comprehensive Surgical Video Dataset for Vision-Language Models](https://arxiv.org/abs/2508.10054) | 面向视觉语言模型的综合手术视频数据集 | [Paper](https://arxiv.org/abs/2508.10054)
  | 2026 | [CliPPER: Contextual Video-Language Pretraining on Long-form Intraoperative Surgical Procedures](https://arxiv.org/abs/2603.24539) | 面向长时手术视频事件识别的视频语言预训练 | [Paper](https://arxiv.org/abs/2603.24539)
+ | 2026 | [SUREON: A Benchmark and Vision-Language-Model for Surgical Reasoning](https://arxiv.org/abs/2603.06570) | 从专家讲解视频构建手术推理、决策与安全判断基准 | [Paper](https://arxiv.org/abs/2603.06570)
 
-## 手术场景重建与 3D 理解
+## 3D-Reconstruction - 手术场景重建与 3D 理解
 
 年份 | 名字 | 简介 | 原文链接
 ---:|---|---|---
@@ -118,15 +131,46 @@
  | 2024 | [LGS: A Light-weight 4D Gaussian Splatting for Efficient Surgical Scene Reconstruction](https://arxiv.org/abs/2406.16073) | 使用轻量化 4D Gaussian Splatting 建模动态手术场景 | [Paper](https://arxiv.org/abs/2406.16073)
  | 2024 | [SurgicalGaussian: Deformable 3D Gaussians for High-Fidelity Surgical Scene Reconstruction](https://papers.miccai.org/miccai-2024/paper/1818_paper.pdf) | 使用可变形 3D Gaussian 表示高保真手术场景 | [Paper](https://papers.miccai.org/miccai-2024/paper/1818_paper.pdf)
 
-## 手术视频生成与世界模型
+## World-Models - 视频生成、世界模型与机器人规划
 
 年份 | 名字 | 简介 | 原文链接
 ---:|---|---|---
- | 2024 | [Surgical Video Generation: From Diffusion to World Models](https://arxiv.org/abs/2608.26214) | 总结扩散模型和世界模型在手术视频生成中的应用 | [Paper](https://arxiv.org/abs/2608.26214)
+ | 2018 | [World Models](https://arxiv.org/abs/1803.10122) | 通过视觉观测学习环境的压缩状态和动力学模型 | [Paper](https://arxiv.org/abs/1803.10122)
+ | 2018 | [Deep Visual Foresight for Task-Oriented Robot Learning](https://arxiv.org/abs/1812.01635) | 通过视觉预测模型进行机器人任务规划 | [Paper](https://arxiv.org/abs/1812.01635)
+ | 2020 | [Dream to Control: Learning Behaviors by Latent Imagination](https://arxiv.org/abs/1912.01603) | 使用潜空间想象进行模型预测和策略学习 | [Paper](https://arxiv.org/abs/1912.01603)
+ | 2022 | [Video Diffusion Models](https://arxiv.org/abs/2204.03458) | 将扩散模型应用于视频生成和视频预测 | [Paper](https://arxiv.org/abs/2204.03458)
+ | 2023 | [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](https://arxiv.org/abs/2303.04137) | 使用扩散模型学习视觉运动策略 | [Paper](https://arxiv.org/abs/2303.04137)
+ | 2024 | [Genie: Generative Interactive Environments](https://arxiv.org/abs/2402.15391) | 从视频学习可交互的生成式环境模型 | [Paper](https://arxiv.org/abs/2402.15391)
  | 2025 | [SAW: Toward a Surgical Action World Model via Controllable and Scalable Video Generation](https://arxiv.org/abs/2603.13024) | 通过可控视频生成构建手术动作世界模型 | [Paper](https://arxiv.org/abs/2603.13024)
  | 2025 | [Cosmos-H-Surgical: Learning Surgical Robot Policies from Videos via World Modeling](https://arxiv.org/abs/2512.23162) | 使用世界模型从手术视频学习机器人策略 | [Paper](https://arxiv.org/abs/2512.23162)
+
+## Foundation-Models - 手术视频基础模型
+
+年份 | 名字 | 简介 | 原文链接
+---:|---|---|---
  | 2026 | [SurgMotion: A Video-Native Foundation Model for Universal Understanding of Surgical Videos](https://arxiv.org/abs/2602.05638) | 面向通用手术视频理解的视频原生基础模型 | [Paper](https://arxiv.org/abs/2602.05638)
  | 2026 | [Scaling Video Pretraining for Surgical Foundation Models](https://arxiv.org/abs/2603.29966) | 研究扩大手术视频预训练规模的方法 | [Paper](https://arxiv.org/abs/2603.29966)
+
+## Surgical-Skill-Assessment - 手术技能评估与训练系统
+
+年份 | 名字 | 简介 | 原文链接
+---:|---|---|---
+ | 2024 | [Design and Implementation of an Intelligent Simulation System for Laparoscopic Surgery Standardized Training](https://doi.org/10.1145/3706890.3706902) | 使用计算机视觉、器械检测与追踪支持腹腔镜标准化训练和技能评估 | [Paper](https://doi.org/10.1145/3706890.3706902)
+
+## COT - 手术视频思维链与时空推理
+
+年份 | 名字 | 简介 | 原文链接
+---:|---|---|---
+ | 2026 | [SurgCoT: Advancing Spatiotemporal Reasoning in Surgical Videos through a Chain-of-Thought Benchmark](https://arxiv.org/abs/2604.20319) | 面向手术视频时空推理的链式思维数据集与评测基准 | [Paper](https://arxiv.org/abs/2604.20319)
+
+## Review paper - 综述与专题研究
+
+年份 | 名字 | 简介 | 原文链接
+---:|---|---|---
+ | 2021 | [Surgical Workflow Analysis: A Review of the State of the Art](https://doi.org/10.1016/j.media.2021.102245) | 系统总结手术工作流、阶段识别、动作识别和技能评估 | [Paper](https://doi.org/10.1016/j.media.2021.102245)
+ | 2025 | [Surgical Scene Understanding in the Era of Foundation AI Models](https://arxiv.org/abs/2502.14886) | 综述基础模型在手术场景理解中的应用 | [Paper](https://arxiv.org/abs/2502.14886)
+ | 2026 | [SurgΣ: A Spectrum of Large-Scale Multimodal Data and Foundation Models for Surgical Intelligence](https://arxiv.org/abs/2603.16822) | 总结大规模手术多模态数据、基础模型与机器人策略学习 | [Paper](https://arxiv.org/abs/2603.16822)
+ | 2026 | [Surgical Video Generation: From Diffusion to World Models](https://arxiv.org/abs/2608.26214) | 总结扩散模型和世界模型在手术视频生成中的发展 | [Paper](https://arxiv.org/abs/2608.26214)
 
 ## 推荐阅读顺序
 
