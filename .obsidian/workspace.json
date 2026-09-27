@@ -11,10 +11,14 @@
             "id": "52e5e048288f3954",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "Knowledges/laparoscopic surgery.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "laparoscopic surgery"
             }
           }
         ]
@@ -37,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -90,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Knowledges/laparoscopic surgery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Knowledges/laparoscopic surgery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -150,6 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Knowledges/laparoscopic surgery.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -158,12 +167,12 @@
               "title": "大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,8 +185,10 @@
       "bases:新建数据库": false
     }
   },
-  "active": "cb73e7236fabff29",
+  "active": "0c121e643a4c804b",
   "lastOpenFiles": [
+    "Pasted image 20260927154611.png",
+    "Knowledges/laparoscopic surgery.md",
     "Medical‑Image/Surgical-Video-Understanding/Surgical-Skill-Assessment/Temporal Segment Networks for Action Recognition in Videos.md",
     "Medical‑Image/Surgical-Video-Understanding/Surgical-Skill-Assessment/Temporal Segment Networks for Action Recognition in Videos",
     "Knowledges/TSN（Temporal Segment Network，时序分段网络）.md",
