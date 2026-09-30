@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/TSN（Temporal Segment Network，时序分段网络）.md",
+                "file": "Knowledges/英语单词.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TSN（Temporal Segment Network，时序分段网络）"
+              "title": "英语单词"
             }
           }
         ]
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Knowledges/TSN（Temporal Segment Network，时序分段网络）.md",
+                "file": "Knowledges/英语单词.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -187,12 +187,14 @@
   },
   "active": "52e5e048288f3954",
   "lastOpenFiles": [
+    "Assets/Is Space-Time Attention All You Need for Video Understanding",
+    "Knowledges/TSN（Temporal Segment Network，时序分段网络）.md",
+    "Knowledges/英语单词.md",
     "Knowledges/laparoscopic surgery.md",
     "Medical‑Image/Surgical-Video-Understanding/Surgical-Skill-Assessment/Artificial Intelligence-Assisted Phase Recognition and Skill Assessment in Laparoscopic Surgery A Systematic Review.md",
     "Pasted image 20260927154611.png",
     "Medical‑Image/Surgical-Video-Understanding/Surgical-Skill-Assessment/Temporal Segment Networks for Action Recognition in Videos.md",
     "Medical‑Image/Surgical-Video-Understanding/Surgical-Skill-Assessment/Temporal Segment Networks for Action Recognition in Videos",
-    "Knowledges/TSN（Temporal Segment Network，时序分段网络）.md",
     "Knowledges/Multi-scale Temporal Window Integration (M-TWI).md",
     "Knowledges",
     "Assets/EndoNet/Table_IV_results.png",
