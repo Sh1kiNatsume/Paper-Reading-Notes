@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledges/英语单词.md",
+                "file": "Medical‑Image/Surgical-Video-Understanding/Datasets/SurgBench.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "英语单词"
+              "title": "SurgBench"
             }
           }
         ]
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Knowledges/英语单词.md",
+                "file": "Medical‑Image/Surgical-Video-Understanding/Datasets/SurgBench.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -185,11 +185,13 @@
       "bases:新建数据库": false
     }
   },
-  "active": "52e5e048288f3954",
+  "active": "cb73e7236fabff29",
   "lastOpenFiles": [
+    "Medical‑Image/Surgical-Video-Understanding/Surgical-Skill-Assessment/A benchmark for video-based laparoscopic skill analysis and assessmen.md",
+    "Knowledges/IDW.md",
+    "Knowledges/英语单词.md",
     "Assets/Is Space-Time Attention All You Need for Video Understanding",
     "Knowledges/TSN（Temporal Segment Network，时序分段网络）.md",
-    "Knowledges/英语单词.md",
     "Knowledges/laparoscopic surgery.md",
     "Medical‑Image/Surgical-Video-Understanding/Surgical-Skill-Assessment/Artificial Intelligence-Assisted Phase Recognition and Skill Assessment in Laparoscopic Surgery A Systematic Review.md",
     "Pasted image 20260927154611.png",
